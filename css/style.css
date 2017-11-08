@@ -79,7 +79,7 @@ fieldset {
 }
 
 button {
-  padding: 19px 39px 18px 39px;
+  padding: 19px 0 18px;
   color: #FFF;
   background-color: #5cbaba;
   font-size: 18px;
@@ -103,14 +103,11 @@ footer {
   width: 100%;
   padding: 10px 0;
   margin: 10px 0;
+  transition: all 1s;
 }
 
-#zip {
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-  padding-bottom: 0;
-  margin-bottom: 0;
+.contact label {
+  width: 100%;
 }
 
 .newsletter {
@@ -131,7 +128,33 @@ footer {
   border-top: 1.5px solid black;
 }
 
+.news textarea {
+  transition: all 1s;
+}
 
+/* Psuedo & Focus Styles*/
+
+.contact input:focus,
+.contact select:focus,
+.news textarea:focus {
+  background-color: #66cccc;
+  color: #fff;
+}
+
+.contact input:hover,
+.contact select:hover,
+.news textarea:hover {
+  background-color: #f44277;
+}
+
+button:hover {
+  background-color: #f44277;
+  border: 1px solid #f44277;
+  border-width: 1px 1px 3px;
+  /*font-size: 1.8em;*/
+  /*padding: 10px 0;*/
+  transition: all .8s;
+}
 
 /* Media Queries */
 
@@ -139,7 +162,28 @@ footer {
 @media (min-width: 768px) {
   main,
   footer {
-    max-width: 70%;
+    width: 50%;
     margin: 0 auto;
   }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contact input,
+  .contact select {
+    width: 75%;
+  }
+
+  .contact label {
+    width: 25%;
+    align-self: center;
+  }
+
+  #zip {
+    width: 30%;
+  }
+
 }
