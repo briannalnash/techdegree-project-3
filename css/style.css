@@ -134,17 +134,17 @@ footer {
 
 /* Psuedo & Focus Styles*/
 
+.contact input:hover,
+.contact select:hover,
+.news textarea:hover {
+  background-color: #f44277;
+}
+
 .contact input:focus,
 .contact select:focus,
 .news textarea:focus {
   background-color: #66cccc;
   color: #fff;
-}
-
-.contact input:hover,
-.contact select:hover,
-.news textarea:hover {
-  background-color: #f44277;
 }
 
 button:hover {
