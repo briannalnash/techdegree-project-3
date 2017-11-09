@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -31,11 +32,11 @@
                 <label for="email">Email Address:</label>
                 <input required type="email" name="email" id="email" placeholder="required"><br />
                 <label for="phone">Phone Number:</label>
-                <input type="telephone" id="phone" name="telephone"><br />
+                <input type="tel" id="phone" name="telephone"><br />
                 <label for="street">Streed Address:</label>
-                <input type="street" id="street" name="streetaddress"><br />
+                <input type="text" id="street" name="streetaddress"><br />
                 <label for="city">City:</label>
-                <input type="city" id="city" name="city"><br />
+                <input type="text" id="city" name="city"><br />
                 <label for="state">State:</label>
                 <select id="state">
                   <option value="none-selected">Choose State</option>
@@ -107,7 +108,7 @@
               <input type="radio" id="html-news" name="format"><label for="html-news">HTML News</label><br />
               <input type="radio" id="plain" name="format"><label for="plain">Plain text</label><br />
               <p><label for="topics">Other topics you'd like to hear about</label></p>
-              <textarea type="text" id="topics" name="textbox"></textarea>
+              <textarea id="topics" name="textbox" placeholder="Enter your topics here"></textarea>
               <button type="submit">Sign Up</button>
             </fieldset>
           </section>
