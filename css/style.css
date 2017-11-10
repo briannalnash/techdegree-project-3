@@ -4,6 +4,7 @@ body {
   font-family: 'Crimson Text', serif;
   font-size: 16px;
   color: #777;
+  letter-spacing: 1.05px;
 }
 
 /* Main Styles */
@@ -94,6 +95,7 @@ button {
 
 footer {
   text-align: center;
+  padding-bottom: 40px;
 }
 
 /* Class & ID Styles */
@@ -111,9 +113,18 @@ footer {
 }
 
 .newsletter {
+  background-color: #76c3c3;
+  margin-top: 30px;
   padding: 20px 0 30px;
   text-align: center;
   border-bottom: 4px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #fff;
+}
+
+.newsletter p {
+  font-size: 1.2em;
 }
 
 .contact {
