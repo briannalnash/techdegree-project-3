@@ -102,14 +102,25 @@ footer {
 
 .contact input,
 .contact select {
-  width: 100%;
   padding: 10px;
   margin: 10px 0;
   transition: all 1s;
 }
 
+.contact input {
+  width: 93%;
+}
+
+.contact select {
+  width: 100%;
+}
+
 .contact label {
   width: 100%;
+}
+
+#zip {
+  width: 40%;
 }
 
 .newsletter {
@@ -183,9 +194,12 @@ button:hover {
     flex-wrap: wrap;
   }
 
-  .contact input,
-  .contact select {
+  .contact input {
     width: 70%;
+  }
+
+  .contact select {
+    width: 73%;
   }
 
   .contact label {
